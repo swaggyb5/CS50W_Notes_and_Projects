@@ -1,0 +1,292 @@
+HTML
+A programming language for designing web pages.
+Example:
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>My Web Page!</title>
+        </head>
+        <body>
+            Hello, world!
+        </body>
+    </html>
+
+Headers in the body of html can be stylized with <h1>...</h1> or h2-6
+
+Lists can also be formatted using:
+    <body>
+        An Unordered List:
+        <ul>
+            <li>One Item</li>
+            <li>Another Item</li>
+        </ul>
+        An Ordered List:
+        <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+        </ol>
+
+Images are formatted using:
+    <img src="cat.jpg" height="200" width="300">
+    Html will automatically use the image at full resolution unless otherwise specified. Height or width can also be set and the other dimension will be scaled accordingly. 
+    Dimension can also be set as a percentage of the window width ie. <img src="cat.jpg" height="50%"
+
+Tables are formatted using:
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>George</td>
+            <td>Washington</td>
+        </tr>
+    </table>
+
+Forms can be formatted using:
+    <form>
+        <input type="text" placeholder="Full Name" name="name">
+        <button>Submit!</button>
+    </form>
+
+Shapes can be formatted using:
+    div {
+        background-color: teal;
+        width: 100px;
+        height 400px;
+        margin 100px - the distance from the edge of the web page to the divider
+        padding 100px - the distance from the edge of the divider to the text
+    }
+
+Fonts can be formatted using
+    <style>
+        div {
+            font-family: Arial, sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+        }
+     </style>
+     
+     
+     
+     
+     
+     CSS
+Styling your html code is done with another programming language: CSS
+Example:
+    <body>
+        <h1 style="color:blue;text-align:center;">Welcome to My Web Page!</h1>
+        <p>Hello World!</p>
+    </body>
+Colors can be assigned using either the name or the color's hex code, easily found on Google
+A color standard can be assigned to a header style in the head of the code.
+    <head>
+        <title>Hi</title>
+        <style>
+            h1 {
+                color: blue;
+                text-align: center;
+            }
+        </style>
+    </head>
+CSS styling can be done outside of the html coding by referencing the CSS file in the head of the code.
+    <head>
+        <title>My Web Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+Shapes can be formatted using:
+    <style>
+        div {
+            background-color: teal;
+            width: 100px;
+            height 400px;
+            margin 100px - the distance from the edge of the web page to the divider
+            padding 100px - the distance from the edge of the divider to the text
+        }
+    </style>
+
+Fonts can be formatted using
+    <style>
+        div {
+            font-family: Arial, sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+        }
+     </style>
+
+Borders can be placed around dividers using:
+    <style>
+        div {
+            border: 3px solid blue;
+        }
+     </style>
+
+
+
+HTML/CSS
+Git
+Git uses branching to allow you to work on separate parts of your project at different times
+    Git has both master branches and feature branches which can be merged
+    Key Commands:
+        git branch - makes a new branch
+        git checkout - looks at the contents of a branch and navigates to it
+        git merge - merges two branches into one
+
+Git Remotes
+Storing other copies of a repository remotely (on Github)
+
+Git Forks
+Forks are entirely new repositories that you can take from a separate repository
+Pull requests are requests that the fork you've been working on be pulled into the original repository
+
+HTML
+Links within a webpage, can go to external links or other places within that webpage
+    <a href="hello.html">Click me!</a> - External link
+    <a href="#section1">Section 1</a> - Internal link
+
+CSS
+Selectors within CSS will assign attributes to specific elements
+	* 
+a, b - multiple element selector
+	* 
+a b - descendant selector
+	* 
+a > b - child selector
+	* 
+a + b adjacent sibling selector
+	* 
+[a=b] - attribute selector
+	* 
+a:b - pseudoclass selector
+	* 
+a::b - pseudoelement selector
+
+
+
+Responsive Design - making a website responsive to the platform from which it is being visited
+Types of responsive design:
+	* 
+viewport
+	* 
+Media querying - assigning CSS styling to a particular element on a particular medium
+	* 
+Flexbox
+	* 
+Grids
+
+
+
+Media querying example:
+    <html>
+    <head>
+        <title>XXX</title>
+        <style>
+            @media (min-width: 500px) {
+                body {
+                    background-color: red; #If the window is viewed at more than 500 px, the background color will be red
+                }
+            }
+            @media print {
+                .screen-only {
+                    display: none; # text of this class will not be displayed in a print setup
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p class="screen-only">Paragraph</p>
+    </body>
+    </html>
+
+Viewport is used to alert browsers to scale the width of texts to the width of the actual device.
+Example:
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+Flexbox allows you to rearrange items on your webpage  according to browser width
+Example:
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .container > div {
+            background-color: springgreen;
+            font-size: 20px;
+            margin: 20px;
+            padding: 20px;
+            width: 200px;
+        }
+    </style>
+Grids allow you to adjust the width of different boxes within a grid
+Example:
+    <style>
+        .grid{
+            background-color: springgreen;
+            font-size: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-template-columns: 200px 200px auto; # this will make the first column 200px, second 200px, third auto fits the screen width
+        }
+        
+        .grid-item {
+            background-color: white;
+            font-size: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            width: 200px;
+        }
+    </style>
+
+CSS Libraries
+It is very common to utilize libraries for website styling to save time and energy
+A common CSS styling library is called 'Bootstrap'
+    Link to bootstrap library through:
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrapxxxxx">
+Bootstrap organizes itself into twelve columns within a web page
+    These are broken up by:
+        <div class="row">
+            <div class="col-lg-3 col-sm-6"?> # these columns take up 3 of the Bootstrap columns" on a large screen, 6 on a small screen
+                This is a column
+            </div>
+            <div class="col-3"?>
+                This is a column
+            </div>
+        </div>
+
+Sass
+Sass is a CSS extension which allows more flexibility within CSS styling
+    Makes it easier to code a style sheet
+    Allows for variable assignment
+    Uses .scss document type
+    Websites don't understand sass 
+    Sass files can be converted to CSS files through the sass 'sassfilename' 'newfilename' console command
+    Sass files will automatically push changes to the linked CSS file if told to 'watch' the file through
+        sass --watch 'sassfilename':'cssfilename'
+Example:
+    $color: red; # variable assignment
+    
+    ul {
+        font-size: 14px ;
+        color: $color;
+    }
+
+Inheritance is possible in sass
+Example:
+    %message {
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 20px;
+    }
+
+    .sucess {
+        @extend %message; # inheritance
+        background-color: green;
+    }
+
+    .error {
+        @extend %message; # inheritance
+        background-color: red;
+    }
