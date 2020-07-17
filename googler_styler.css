@@ -1,0 +1,85 @@
+body {
+	font-family: Roboto, RobotoDraft, Helvetica, Arial;
+}
+.container {
+	margin: auto;
+	width: 500px;
+	text-align: center;
+	margin-top: 200px;
+}
+
+.links {
+	text-align: right;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 3% 18% auto 17%;
+	margin-top: 25px;
+}
+
+.header {
+	color: Red;
+	font-size: 22px;
+	font-weight: normal;
+	margin-left: 3%;
+	height: 50px;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+form {
+	margin-top: 40px;
+}
+
+.column1 > h1 {
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 25px;
+}
+
+.column1 > p {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+input[type=text].advanced_search {
+	border-radius: 0px;
+	margin-top: 3px;
+	height: 25px;
+}
+
+input[type=submit].advanced_submit {
+	background-color: DodgerBlue;
+	color: white;
+}
+
+div a:after {
+	content: "";
+	display: block;
+	height: 5px;
+	width: 1px;
+}
+
+input[type=text] {
+	width: 90%;
+	height: 40px;
+	border-style: solid;
+	border-radius: 20px;
+	border-width: 1px;
+	border-color: #E0E0E0;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+input[type=submit] {
+	color: #787878;
+	width: 150px;
+	font-size: 14px;
+	background-color: #F0F0F0;
+	border-style: none;
+	border-radius: 5px;
+	padding: 12px;
+	margin-top: 10px;
+	margin-right: 3px;
+	margin-left: 3px;
+}
