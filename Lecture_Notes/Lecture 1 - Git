@@ -1,0 +1,32 @@
+Using Git
+Keeps track of changes to code
+Synchronizes code between people
+Test changes without losing the original
+Reverting back to old versions of code
+
+GitHub stores git repositories on the internet
+
+git clone <url> copies a repository from the internet and makes a local copy
+Every github repository has a url
+git add <filename>  will add a file to the repository the next time it is saved
+git commit -m "message" will save a snapshot of the repository and include a message which should describe changes made
+git status checks the current status of your repository
+git push pushes your repository from your local repository to the github repository
+git pull  will download the latest version of the repository on github onto your computer
+git log shows a log of all changes made to the repository
+git reset resets repository to a previous version
+    git reset --hard <commit> returns to the commit number specified
+    git reset --hard origin/master returns to the original repository on github
+
+
+
+Merge conflicts - when different versions have edited the same code
+    code
+    <<<<< HEAD
+    your_conflicting_code
+   ==== 
+    their_conflicting_code
+    >>>>> something
+    rest_of_code
+    
+    Conflicts are resolved by removing the head and tail and whichever code you wish to remove
