@@ -66,3 +66,58 @@ Fonts can be formatted using
             font-weight: bold;
         }
      </style>
+     
+     
+     
+     
+     
+     CSS
+Styling your html code is done with another programming language: CSS
+Example:
+    <body>
+        <h1 style="color:blue;text-align:center;">Welcome to My Web Page!</h1>
+        <p>Hello World!</p>
+    </body>
+Colors can be assigned using either the name or the color's hex code, easily found on Google
+A color standard can be assigned to a header style in the head of the code.
+    <head>
+        <title>Hi</title>
+        <style>
+            h1 {
+                color: blue;
+                text-align: center;
+            }
+        </style>
+    </head>
+CSS styling can be done outside of the html coding by referencing the CSS file in the head of the code.
+    <head>
+        <title>My Web Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+Shapes can be formatted using:
+    <style>
+        div {
+            background-color: teal;
+            width: 100px;
+            height 400px;
+            margin 100px - the distance from the edge of the web page to the divider
+            padding 100px - the distance from the edge of the divider to the text
+        }
+    </style>
+
+Fonts can be formatted using
+    <style>
+        div {
+            font-family: Arial, sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+        }
+     </style>
+
+Borders can be placed around dividers using:
+    <style>
+        div {
+            border: 3px solid blue;
+        }
+     </style>
